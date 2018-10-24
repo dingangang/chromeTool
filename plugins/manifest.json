@@ -1,0 +1,31 @@
+{
+  "name": "teewon-i18n",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "icons": {
+    "16": "imgs/icon-16.png",
+    "48": "imgs/icon-48.png",
+    "128": "imgs/icon-128.png"
+  },
+  "description": "天闻国际化样式修改",
+  "minimum_chrome_version": "37",
+  "browser_action": {
+    "default_icon": "imgs/icon-48.png",
+    "default_title": "teewon-i18n",
+    "default_popup": "i18n.html"
+  },
+  "background": {
+    "scripts": [ "background.js" ]
+ },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "i18n.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
