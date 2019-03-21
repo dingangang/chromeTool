@@ -39,7 +39,7 @@ var watchStyle = function () {
 
         setTimeout(() => {
           watchStyle()
-        }, 300)
+        }, 3000)
       } else {
         alert('连接样式修改服务器http://localhost:8080超时，请检查服务是否已经启动，并在启动后强制刷新本页面。')
       }
